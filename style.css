@@ -1,1 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    background: #f2f5f4;
+    color: #24332c;
+}
+
+.app {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 28px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px #00000012;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.intro {
+    color: #66746c;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 18px 0 8px;
+}
+
+.input-row {
+    display: flex;
+    gap: 8px;
+}
+
+input[type="text"],
+input[type="search"] {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #bfcac3;
+    border-radius: 7px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 7px;
+    background: #227b4b;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background: #17613a;
+}
+
+button.secondary {
+    background: #e6eee8;
+    color: #254332;
+}
+
+button.secondary:hover {
+    background: #d3e2d7;
+}
+
+button.danger {
+    background: #fbe9e9;
+    color: #a12d2d;
+}
+
+button.danger:hover {
+    background: #f5d4d4;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.list-header h2 {
+    font-size: 19px;
+}
+
+#count {
+    color: #68776d;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e6ece8;
+}
+
+li input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    accent-color: #227b4b;
+    flex-shrink: 0;
+}
+
+.product-name {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li.done .product-name {
+    text-decoration: line-through;
+    color: #89948d;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.actions button {
+    font-size: 13px;
+    padding: 8px;
+}
+
+#empty-message {
+    color: #758078;
+    text-align: center;
+    padding: 18px;
+}
+
+#status {
+    color: #a12d2d;
+    min-height: 1.2em;
+    font-size: 14px;
+}
+
+@media (max-width: 460px) {
+    .app {
+        padding: 18px;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+
+    .actions {
+        margin-left: auto;
+    }
+}
 
