@@ -1,0 +1,2 @@
+# Bevasarlolista_NYE_RFT
+Bevásárlólista alkalmazás projekt
